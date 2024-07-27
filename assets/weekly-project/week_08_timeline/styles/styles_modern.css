@@ -1,0 +1,51 @@
+body {
+    background: #ffffff;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+header {
+    text-align: center;
+    background: none;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #6200ea;
+    align-self: center;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+}
+
+button:hover {
+    background: #3700b3;
+}
+
+main {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#one, #two{
+    display: none;
+}
