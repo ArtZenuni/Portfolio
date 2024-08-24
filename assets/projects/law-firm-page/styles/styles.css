@@ -145,6 +145,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     height: 25rem;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.card:hover{
+transform: scale(1.1);
+background-color: #161616;
+color: #d31900;
 }
 
 .card h3 {
