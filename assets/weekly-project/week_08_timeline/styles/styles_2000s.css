@@ -1,0 +1,87 @@
+body {
+    background-image: url(../images/background-frutiger.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background: #ff6600e5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+button {
+    background: radial-gradient(circle, rgba(255,0,0,0.27494747899159666) 0%, rgba(255,62,62,0.7203256302521008) 48%);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container img{
+    width: 20rem;
+}
+.container p{
+    align-self: center;
+    font-weight: bolder;
+}
+
+#two {
+    display: none;
+}
+
+#three {
+    display: none;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media only screen and (max-width:700px) {
+    .container {
+        flex-direction: column;
+    }
+    body{
+        background-color: #60c4e8 ;
+    }
+    .container img{
+        align-self: center;;
+    }
+}

@@ -1,0 +1,155 @@
+
+:root {
+    --font-color: rgb(37, 37, 37);
+    --btn-color: bisque;
+    --background-panel-color: rgb(179, 179, 179);
+}
+
+header {
+    background-color: black;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    color: var(--font-color);
+    justify-content: space-evenly;
+}
+
+nav ul a li {
+    color: white;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(201, 201, 201, 1) 50%, rgba(152, 152, 152, 1) 100%);
+}
+
+.container {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.panel {
+    background-color: var(--background-panel-color);
+    border-radius: 8px;
+    width: 150px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 2px 12px rgb(60, 60, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel:hover {
+    box-shadow: 0px 2px 24px rgb(24, 24, 24);
+    /* transform: scale(1.1); */
+    /* I am not sure if I like this - ask for opinion */
+}
+
+.panel h3 {
+    cursor: default;
+    margin: 0;
+    font-weight: 1000;
+    color: var(--focolor);
+
+}
+
+.price {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    cursor: default;
+}
+
+img {
+    margin-top: 1.2rem;
+    margin-bottom: auto;
+}
+
+.container button {
+    margin-top: 0.3rem;
+    margin-bottom: 10px; /* Added margin-bottom to lift the button slightly */
+    padding: 12px 16px;
+    background: rgb(149, 149, 149);
+    background: radial-gradient(circle, rgba(149, 149, 149, 1) 50%, rgba(99, 99, 99, 1) 100%);
+    border-radius: 1000px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: var(--btn-color);
+    white-space: nowrap;
+    border: none;
+    text-decoration: none;
+}
+
+button:hover {
+    box-shadow: 0px 2px 15px black;
+}
+
+.seperator{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.checkout{
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    justify-content: flex-end;
+    position: static;
+    gap: 1rem;
+    flex-direction: column;
+    height: 6rem;
+    min-width: 10rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+.checkout p{
+    color: rgb(226, 226, 226);
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.checkout button{
+    height: 2rem;
+    width: 5rem;
+    align-self: center;
+}
+
+
+*::-webkit-scrollbar {
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(190, 191, 190);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(150, 150, 150);
+    border-radius: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

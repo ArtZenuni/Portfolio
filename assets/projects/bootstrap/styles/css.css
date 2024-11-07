@@ -1,0 +1,38 @@
+.hero {
+    background: url('../images/hero.jpg');
+    background-size: cover;
+    height: 70vh;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+.hero h1, .hero p{
+    color: white;
+  }
+
+  .features {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .row{
+    background-color: rgb(148, 148, 148);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .testimonial {
+    background: #f1f1f1;
+    padding: 60px 0;
+  }
+  .footer {
+    background: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 450px) {
+    .hero {
+      height: 100vh;
+    }
+  }
