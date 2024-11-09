@@ -21,11 +21,22 @@ h1 {
 h3 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-weight: 900;
-	font-size: 1em;
+	font-size: 1rem;
 	color: rgba(0, 0, 0, 0.5);
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.01em;
+}
+
+button {
+	border-radius: 16px;
+	border: none;
+	box-shadow: 1px 1px 20px 1px black;
+	cursor: pointer;
+	padding: 5px 10px;
+	height: 20vh;
+	width: 80%;
+	margin-top: 10%;
 }
 
 @media (max-width:675px){
@@ -42,4 +53,5 @@ h3 {
     h2{
         font-size: 120%;
     }
+
 }

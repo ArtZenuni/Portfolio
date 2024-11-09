@@ -24,6 +24,8 @@ color2.addEventListener("input", setGradient());
 //Create button for random color pick
 var button = document.createElement("button");
 button.appendChild(document.createTextNode("Select Random Color"));
+button.style.background = "linear-gradient(to right, " + color1.value + ", " 
++ color2.value +")";
 body.appendChild(button);
 
 //Random color selector
@@ -40,6 +42,8 @@ function getRandomColor() {
 	var rndColor1 = randomColor();
 	var rndColor2 = randomColor();
 	body.style.background = "linear-gradient(to right, " + rndColor1 + ", " 
+	+ rndColor2 +")";
+	button.style.background = "linear-gradient(to right, " + rndColor1 + ", " 
 	+ rndColor2 +")";
 	h3.textContent = body.style.background + ";";
 }
