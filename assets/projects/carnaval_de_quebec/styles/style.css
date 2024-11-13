@@ -78,6 +78,7 @@ nav ul li a:hover::after {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
+    width: 100%;
 }
 
 .hero-image a{
@@ -134,7 +135,8 @@ nav ul li a:hover::after {
 .social-box{
     display: flex;
     flex-direction: column;
-    gap: 1.9rem;
+    gap: 50px;
+    padding: 0.5em;
     position: absolute;
     top: 50%;
     left: 0.25%;
@@ -144,14 +146,14 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
     position: absolute;
-    min-width: 1.2rem;
-    max-width: 1.2rem;
+    min-height: 1.2rem;
+    max-height: 2rem;
     transition: all 0.1s ease-in-out;
-    padding: 0.2rem;
+    width: auto;
 }
 
 .social-box a img:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
     background: var(--icy);
     border-radius: 8px;
 }
@@ -194,6 +196,7 @@ body{
     position: relative;
     width: 550px;
     margin: auto;
+    margin-bottom: 40px;
   }
    
 
@@ -206,6 +209,8 @@ body{
     width: 100%;
     display: none;
     border-radius: 8px;
+    border: 10px solid black;
+    margin-bottom: 30px;
   }
    
   .carousel-slide img.active {
@@ -218,43 +223,44 @@ body{
     transform: translateY(-50%);
     width: 100%;
     display: flex;
-    justify-content: space-between;
-  }
-   
-  .carousel-navigation .prev,
-  .next {
-    color: var(--purple);
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    top: 54.5vh;
+
   }
    
   .carousel-navigation button {
-    background-color: rgb(255, 253, 253);
+    color: var(--purple);
+    background-color: rgba(255, 0, 0, 0);
     border-radius: 100px;
     border: none;
     font-size: 24px;
     cursor: pointer;
     outline: none;
+    position: relative;
+    margin-bottom: 30px;
   }
    
   .carousel-bullets {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 14px;
+
   }
    
   .carousel-bullets .bullet {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #bbb;
+    background-color: #2d2d2d;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
   }
    
   .carousel-bullets .bullet.active {
-    background-color: #717171;
+    background-color: #bcbcbc;
   }
-
-/* Information Panels */
 
 /* Card Cover */
 h3 {
@@ -349,6 +355,11 @@ h3 {
 .card:hover .card-description {
     opacity: 1;
     transition-delay: .25s;
+}
+
+.information {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .infopanels{
@@ -594,6 +605,10 @@ footer img:hover{
         z-index: 1000;
     }
     
+    .CenterCode{
+        margin: 0 auto;
+    }
+
     .menu a {
         padding: 12px 16px;
         text-decoration: none;
@@ -605,7 +620,6 @@ footer img:hover{
         max-height: 300px; /* Adjust as needed */
         opacity: 1;
     } 
-    
     .burger-menu.open .line1 {
         transform: rotate(-45deg) translate(-9px, 5px);
     }
@@ -629,7 +643,7 @@ footer img:hover{
     }
 
     .timer{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
 
@@ -643,6 +657,7 @@ footer img:hover{
         top: 70%;
         left: 48%;
         transform: translate(-50%, 0);
+        max-width: 290px;
     }
 
     .social{
@@ -697,6 +712,31 @@ footer img:hover{
         gap: 2rem;
         text-align: center;
     }
+ }
 
+ @media only screen and (max-width: 500px){
 
+    .body {
+        padding: 10px;
+    }
+
+    .information {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .carousel-container {
+        max-width: 290px;
+        overflow: hidden;
+    }
+
+    footer {
+        max-width: 90%;
+        overflow: hidden;
+        font-size: 10px;
+    }
+
+    .learnmore {
+        display: none;
+    }
  }
